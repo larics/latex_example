@@ -1,0 +1,55 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+\usepackage[croatian]{babel}
+\usepackage[cp1250]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}     % Type 1 fonts, similar to Computer Modern
+\usepackage{microtype}
+
+\usepackage{booktabs}
+\usepackage{enumerate}
+\usepackage{algorithm2e}
+\usepackage{todonotes}
+
+\usepackage{dirtree}
+
+\usepackage{hyperref}
+
+\graphicspath{{./figures/}}
+
+\newcommand { \sqmatrix }[5]{
+	\ensuremath {
+	#1=\begin{bmatrix}
+			#2 & #3 \\
+			#4 & #5 
+		\end{bmatrix}
+	}
+}
+
+\begin{document}
+
+\title{Larics Latex Coding Standard}
+\author{Vrijedni Laricsovac}
+\maketitle
+%\tableofcontents
+
+%\begin{abstract}
+%		In this document we give recommendations on how to structure and prepare your Latex project.  
+%\end{abstract}
+
+\input{content/chapter_1.tex}
+\input{content/chapter_2.tex}
+\input{content/chapter_3.tex}
+
+\bibliographystyle{ieeetr}
+\bibliography{bibliography/my_bibliography}
+
+\end{document}

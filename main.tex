@@ -1,27 +1,27 @@
 \RequirePackage[l2tabu, orthodox]{nag}
 
 \documentclass[11pt]{article}
-\usepackage{amsmath}
+
+\usepackage{amsmath}    			% ams packages for mathematics environment    
 \usepackage{amssymb}
 \usepackage{amsfonts}
 \usepackage{amsthm}
 
-\usepackage{graphicx}
+\usepackage{graphicx}  				% Versatile graphics manipulation options
 
-\usepackage[croatian]{babel}
-\usepackage[utf8]{inputenc}
+\usepackage[croatian]{babel}  % Croatian typographical rules and hyphenation patterns 
+\usepackage[utf8]{inputenc}  	% Encoding of Croatian characters
 \usepackage[T1]{fontenc}
-\usepackage{ae,aecompl}     % Type 1 fonts, similar to Computer Modern
-\usepackage{microtype}
+\usepackage{ae,aecompl}     	% Type 1 fonts, similar to Computer Modern
 
-\usepackage{booktabs}
-\usepackage{enumerate}
-\usepackage{algorithm2e}
-\usepackage{todonotes}
+\usepackage{microtype}				% Improves spacing
 
-\usepackage{dirtree}
-
-\usepackage{hyperref}
+\usepackage{booktabs}					% Nice looking tables
+\usepackage{enumerate}				% Additional options for listing of items in enumerate environment
+\usepackage{algorithm2e}			% Writing pseudo-code
+\usepackage{todonotes}				% Adding todo items
+\usepackage{dirtree}					% Simple display of directory tree
+\usepackage{hyperref}					% Managing cross-referencing
 
 \graphicspath{{./figures/}}
 
@@ -48,6 +48,10 @@
 \input{content/chapter_1.tex}
 \input{content/chapter_2.tex}
 \input{content/chapter_3.tex}
+
+\appendix
+\input{content/appendix.tex}
+
 
 \bibliographystyle{ieeetr}
 \bibliography{bibliography/my_bibliography}

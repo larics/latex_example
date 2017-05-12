@@ -1,6 +1,6 @@
 \RequirePackage[l2tabu, orthodox]{nag}
 
-\documentclass[11pt]{article}
+\documentclass[times, utf8, diplomski]{fer}
 
 \usepackage{amsmath}    			% ams packages for mathematics environment    
 \usepackage{amssymb}
@@ -20,40 +20,54 @@
 \usepackage{enumerate}				% Additional options for listing of items in enumerate environment
 \usepackage{algorithm2e}			% Writing pseudo-code
 \usepackage{todonotes}				% Adding todo items
-\usepackage{dirtree}					% Simple display of directory tree
 \usepackage{hyperref}					% Managing cross-referencing
 
 \graphicspath{{./figures/}}
 
-\newcommand { \sqmatrix }[5]{
-	\ensuremath {
-	#1=\begin{bmatrix}
-			#2 & #3 \\
-			#4 & #5 
-		\end{bmatrix}
-	}
-}
-
 \begin{document}
 
-\title{Larics Latex Coding Standard}
-\author{Vrijedni Laricsovac}
+% TODO: Navedite broj rada.
+\thesisnumber{000}
+
+% TODO: Navedite naslov rada.
+\title{Naslov}
+
+% TODO: Navedite vaše ime i prezime.
+\author{Arthur Dent}
+
 \maketitle
-%\tableofcontents
 
-%\begin{abstract}
-%		In this document we give recommendations on how to structure and prepare your Latex project.  
-%\end{abstract}
+% Ispis stranice s napomenom o umetanju izvornika rada. Uklonite naredbu \izvornik ako želite izbaciti tu stranicu.
+\izvornik
 
-\input{content/chapter_1.tex}
-\input{content/chapter_2.tex}
-\input{content/chapter_3.tex}
+% Dodavanje zahvale ili prazne stranice. Ako ne želite dodati zahvalu, naredbu ostavite radi prazne stranice.
+\zahvala{}
+
+\tableofcontents
+
+\input{content/uvod.tex}
+\input{content/poglavlje_1.tex}
+% Dodati ostala poglavlja
+\input{content/zakljucak.tex}
+
+\bibliography{bibliography/literatura}
+\bibliographystyle{fer}
 
 \appendix
 \input{content/appendix.tex}
 
+\begin{sazetak}
+Sažetak na hrvatskom jeziku.
 
-\bibliographystyle{ieeetr}
-\bibliography{bibliography/my_bibliography}
+\kljucnerijeci{Ključne riječi, odvojene zarezima.}
+\end{sazetak}
+
+% TODO: Navedite naslov na engleskom jeziku.
+\engtitle{Title}
+\begin{abstract}
+Abstract.
+
+\keywords{Keywords.}
+\end{abstract}
 
 \end{document}

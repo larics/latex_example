@@ -1,0 +1,57 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+
+\documentclass[times, utf8, seminar]{fer}
+\usepackage{amsmath}    			% ams packages for mathematics environment    
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{graphicx}  				% Versatile graphics manipulation options
+
+\usepackage[croatian]{babel}  % Croatian typographical rules and hyphenation patterns 
+\usepackage[utf8]{inputenc}  	% Encoding of Croatian characters
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}     	% Type 1 fonts, similar to Computer Modern
+
+\usepackage{microtype}				% Improves spacing
+
+\usepackage{booktabs}				% Nice looking tables
+\usepackage{enumerate}				% Additional options for listing of items in enumerate environment
+\usepackage{algorithm2e}			% Writing pseudo-code
+\usepackage{todonotes}				% Adding todo items
+\usepackage{hyperref}				% Managing cross-referencing
+
+\graphicspath{{./figures/}}
+
+\begin{document}
+
+% TODO: Navedite naslov rada.
+\title{Naslov}
+
+% TODO: Navedite vaše ime i prezime.
+\author{Arthur Dent}
+
+% TODO: Navedite ime i prezime mentora.
+\voditelj{Ford Perfect}
+
+\maketitle
+
+\tableofcontents
+
+\input{content/uvod.tex}
+\input{content/poglavlje_1.tex}
+% Dodati ostala poglavlja
+\input{content/zakljucak.tex}
+
+\bibliography{bibliography/literatura}
+\bibliographystyle{fer}
+
+\appendix
+\input{content/appendix.tex}
+
+\begin{sazetak}
+Sažetak.
+
+\end{sazetak}
+
+\end{document}

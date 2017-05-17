@@ -74,7 +74,7 @@
 \RequirePackage{graphicx} % Uključeno jer je često korišteno
 \RequirePackage{amssymb} % Uključeno jer je često korišteno
 \RequirePackage{amsmath} % Uključeno jer je često korišteno
-\RequirePackage{fixltx2e}
+%\RequirePackage{fixltx2e}
 \RequirePackage{caption}
 \RequirePackage{ifthen}
 \RequirePackage{url} % Potrebno radi natbiba
@@ -88,7 +88,8 @@
 \fi
 
 % Postavljanje fonta
-\if@fonttimes\RequirePackage{times} \fi
+%\if@fonttimes\RequirePackage{times} \fi
+\if@fonttimes\RequirePackage{mathptmx} \fi
 \if@fontlmodern\RequirePackage{lmodern} \fi
 
 % Postavljanje stila citiranja
@@ -339,9 +340,9 @@
 \vspace*{\fill}
 \thispagestyle{empty}
 \begin{center}
-  {\bf \@title}
+  {\bfseries \@title}
 \end{center}
-\hspace*{\fill} {\bf Sa\v{z}etak} \hspace*{\fill} \par
+\hspace*{\fill} {\bfseries Sa\v{z}etak} \hspace*{\fill} \par
 \vspace*{25pt}
 }
 {
@@ -371,9 +372,9 @@ Koristi \noexpand\engtitle za definiranje}}
 \vspace*{\fill}
 \thispagestyle{empty}
 \begin{center}
-  {\bf \@engtitle}
+  {\bfseries \@engtitle}
 \end{center}
-\hspace*{\fill} {\bf Abstract} \hspace*{\fill} \par
+\hspace*{\fill} {\bfseries Abstract} \hspace*{\fill} \par
 \vspace*{25pt}
 }
 {
